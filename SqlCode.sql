@@ -1,0 +1,1 @@
+--  shotta kod yoziladi
