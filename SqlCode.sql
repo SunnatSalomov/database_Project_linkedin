@@ -54,5 +54,9 @@ create table profile
     user_id     int references users (id),
     headline    varchar,
     connections int
-)
-
+);
+create table skill(
+    id serial primary key ,
+    name varchar,
+    user_id int references users(id)
+);
