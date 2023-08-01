@@ -1,3 +1,7 @@
+--  shotta kod yoziladi
+create table a(id serial primary key ,
+b int);
+
 create table users
 (
     id         serial primary key,
@@ -21,4 +25,4 @@ create table comment
     post_id      int references post (id),
     content      character varying,
     comment_date date default now()
-)
+);
