@@ -60,3 +60,7 @@ create table skill(
     name varchar,
     user_id int references users(id)
 );
+
+
+
+
