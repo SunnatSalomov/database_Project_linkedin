@@ -28,6 +28,6 @@ create table comment
     id           serial primary key,
     user_id      int references users (id),
     post_id      int references post (id),
-    content      character varying,
+    content      varchar,
     comment_date date default now()
 );
