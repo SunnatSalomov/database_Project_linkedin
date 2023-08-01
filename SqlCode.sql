@@ -16,3 +16,18 @@ create table experience(
     start_date date,
     end_date date
 );
+create table post
+(
+    id        serial primary key,
+    user_id   int references users (id),
+    content   varchar,
+    post_date date
+);
+create table comment
+(
+    id           serial primary key,
+    user_id      int references users (id),
+    post_id      int references post (id),
+    content      varchar,
+    comment_date date default now()
+);
