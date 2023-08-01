@@ -11,7 +11,7 @@ create table users
 create table experience
 (
     id           serial primary key,
-    user_id      int,
+    user_id       int,
     foreign key (user_id) references users (id) on delete cascade,
     company_name varchar(100),
     title        varchar(100),
